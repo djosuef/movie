@@ -41,4 +41,9 @@ public class MovieController {
 
         return this.iMovieService.findByNameContaining(name);
     }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<?> delete(@PathVariable int id){
+        return this.iMovieService.delete(id);
+    }
 }

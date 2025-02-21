@@ -68,4 +68,15 @@ public class MovieServiceImpl implements IMovieService {
         }
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body("No fue posible modificar la pelicula");
     }
+
+    @Override
+    public ResponseEntity<?> delete(int id) {
+        Optional<MovieEntity> movie = this.movieRepository.findById(id);
+        if(movie.isPresent()){
+
+            this.movieRepository.deleteById(id);
+            return ResponseEntity.ok("movie deleted");
+        }
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Movie not Found");
+    }
 }

@@ -16,4 +16,6 @@ public interface IMovieService {
     public ResponseEntity<List<MovieEntity>> findAll();
 
     public ResponseEntity<?> update(int id, MovieEntity movie);
+
+    public ResponseEntity<?> delete(int id);
 }
