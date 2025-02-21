@@ -16,7 +16,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"id:\":0,\r\n    \"name\":\"Terminator I\",\r\n    \"description\":\"\",\r\n    \"genre\":\"Sci-Fi\",\r\n    \"year\":2002,\r\n    \"rating\":9\r\n}",
+							"raw": "{\r\n    \"id:\":0,\r\n    \"name\":\"Terminator II\",\r\n    \"description\":\"\",\r\n    \"genre\":\"Sci-Fi\",\r\n    \"year\":2002,\r\n    \"rating\":9\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -63,7 +63,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/movies/1",
+							"raw": "http://localhost:8080/movies/2",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -71,7 +71,7 @@
 							"port": "8080",
 							"path": [
 								"movies",
-								"1"
+								"2"
 							]
 						}
 					},
@@ -84,7 +84,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"id:\":1,\r\n    \"name\":\"Matrix 2\",\r\n    \"description\":\"It depicts a dystopian future in which humanity is unknowingly trapped inside the Matrix, a simulated reality created by intelligent machines. Believing computer hacker Neo to be 'the One' prophesied to defeat them, Morpheus recruits him into a rebellion against the machines. Warner Bros.\",\r\n    \"genre\":\"Sci-Fi\",\r\n    \"year\":1986,\r\n    \"rating\":10\r\n}",
+							"raw": "{\r\n    \"id:\":1,\r\n    \"name\":\"Matrix 2\",\r\n    \"description\":\"a\",\r\n    \"genre\":\"Sci-Fi\",\r\n    \"year\":1986,\r\n    \"rating\":10\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -92,7 +92,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/movies/update",
+							"raw": "http://localhost:8080/movies/2",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -100,7 +100,7 @@
 							"port": "8080",
 							"path": [
 								"movies",
-								"update"
+								"2"
 							]
 						}
 					},
